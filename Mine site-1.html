@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F&L Automação e Manutenção Industrial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #0a0a0a, #1a1a2e);
+      color: #f0f0f0;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+    header img {
+      max-height: 120px;
+      animation: glow 2s infinite alternate;
+      filter: drop-shadow(0 0 10px #00bfff);
+    }
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 10px #00bfff); }
+      to { filter: drop-shadow(0 0 20px #66ccff); }
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #00bfff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #66ccff;
+    }
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+    h2 {
+      color: #00bfff;
+      margin-bottom: 20px;
+    }
+    .projetos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,191,255,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    button {
+      padding: 12px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #66ccff;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Substitua logo.png pelo arquivo do logotipo -->
+    <img src="logofl.png.png" alt="Logotipo F&L">
+    <h1>F&L Automação e Manutenção Industrial</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A F&L é especializada em soluções de automação e manutenção industrial, oferecendo inovação, eficiência e confiabilidade para processos produtivos.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos">
+      <div class="card">
+        <h3>Automação das Esteiras</h3>
+        <p>Integração de esteiras com PLC e IHM, garantindo eficiência e segurança.</p>
+      </div>
+      <div class="card">
+        <h3>Monitoramento de Paletes</h3>
+        <p>Sistema de sensores para contagem automática e relatórios de desempenho.</p>
+      </div>
+      <div class="card">
+        <h3>Expansão Futuras</h3>
+        <p>Planejamento para inclusão de novas linhas e integração com ERP.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Telefone Weudes técnico em manutenção:</strong> <a href="tel:+5562999999999">(62) 99157-9346</a></p>
+    <p><strong>Telefone Flavia diretora comercial:</strong> <a href="tel:+5562988888888">(62) 99411-1067</a></p>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 F&L Automação e Manutenção Industrial - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
